@@ -50,7 +50,7 @@ int main(int argc, char const* argv[]) {
                 break;
             }
             token = strtok(NULL, " \n");
-        }
+        }   
     }
 
     printf("Value of [a]: %d", wires[0]);
