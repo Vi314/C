@@ -1,9 +1,9 @@
-int isUpperCaseNum(char ch) {
-    return ch > 64 && ch < 91;
+int isUpperCase(char ch) {
+    return ch >= 'A' && ch <= 'Z';
 }
-int isLowerCaseNum(char ch) {
-    return ch > 96 && ch < 123;
+int isLowerCase(char ch) {
+    return ch >= 'a' && ch <= 'z';
 }
 int isDigit(char ch) {
-    return ch > 47 && ch < 58;
+    return ch >= '0' && ch <= '9';
 }

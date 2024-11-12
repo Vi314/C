@@ -19,14 +19,14 @@ int main(int argc, char const* argv[]) {
     while (fgets(buffer, 25, fptr)) {
         token = strtok(buffer, " \n");
         while (token != NULL) {
-            if (isLowerCaseNum(token[0])) {
+            if (isLowerCase(token[0])) {
                 val = wires[getIdx(token)];
             } else if (isDigit(token[0])) {
                 val = strtol(token, NULL, 10);
             } 
-            else if (isUpperCaseNum(token[0])) {
+            else if (isUpperCase(token[0])) {
                 next = strtok(NULL, " \n");
-                if (isLowerCaseNum(next[0])) {
+                if (isLowerCase(next[0])) {
                     secondVal = wires[getIdx(next)];
                 } else if (isDigit(next[0])) {
                     secondVal = strtol(next, NULL, 10);
